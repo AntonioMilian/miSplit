@@ -17,7 +17,7 @@ public class JavaApplication28 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ArrayList coleccion=miSplit("hola mundo cruel", " ");
+        ArrayList coleccion = miSplit("hola    mundo cruel  ", " ");
         System.out.println(coleccion);
     }
 
