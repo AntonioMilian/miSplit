@@ -17,7 +17,7 @@ public class JavaApplication28 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ArrayList coleccion = miSplit("el perro de san roque no tiene rabo", " ");
+        ArrayList coleccion = miSplit("frase de prueba", " ");
         System.out.println(coleccion);
     }
 
