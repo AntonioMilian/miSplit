@@ -25,7 +25,9 @@ public class JavaApplication28 {
         ArrayList<StringBuilder> listaPalabras = new ArrayList<>();
         StringBuilder palabraEnCurso = new StringBuilder();
         for (int i = 0; i < cadena.length(); i++) {
+
             if (cadena.charAt(i) == separador.charAt(0)) {
+
                 if (!palabraEnCurso.toString().equals("")) {
                     listaPalabras.add(palabraEnCurso);
                 }
@@ -33,6 +35,7 @@ public class JavaApplication28 {
             } else {
                 palabraEnCurso.append(cadena.charAt(i));
             }
+
         }
         if (!palabraEnCurso.toString().equals("")) {
             listaPalabras.add(palabraEnCurso);
