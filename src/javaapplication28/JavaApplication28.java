@@ -17,11 +17,13 @@ public class JavaApplication28 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ArrayList coleccion = miSplit("frase de prueba", " ");
-        System.out.println(coleccion);
+        String[] coleccion = miSplit("frase de prueba", " ");
+        for (String s:coleccion){
+            System.out.println(s);
+        }
     }
 
-    public static ArrayList<StringBuilder> miSplit(String cadena, String separador) {
+    public static String[] miSplit(String cadena, String separador) {
         ArrayList<StringBuilder> listaPalabras = new ArrayList<>();
         StringBuilder palabraEnCurso = new StringBuilder();
         for (int i = 0; i < cadena.length(); i++) {
@@ -40,8 +42,12 @@ public class JavaApplication28 {
         if (!palabraEnCurso.toString().equals("")) {
             listaPalabras.add(palabraEnCurso);
         }
-
-        return listaPalabras;
+        String[] miArray= new String[listaPalabras.size()];
+        for(int i=0;i<listaPalabras.size();i++){
+            StringBuilder sb = listaPalabras.get(i);
+            miArray[i]=sb.toString();
+        }
+        return miArray;
     }
 
 }
