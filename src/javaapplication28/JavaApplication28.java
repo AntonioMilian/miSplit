@@ -5,7 +5,17 @@
  */
 package javaapplication28;
 
+import java.io.BufferedOutputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -17,10 +27,13 @@ public class JavaApplication28 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         String[] coleccion = miSplit("frase de prueba", " ");
         for (String s:coleccion){
             System.out.println(s);
         }
+        
+        
     }
 
     public static String[] miSplit(String cadena, String separador) {
